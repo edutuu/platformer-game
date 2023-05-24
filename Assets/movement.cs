@@ -42,6 +42,7 @@ public class movement : MonoBehaviour
 
     }
 
+  
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(coli.bounds.center, coli.bounds.size, 0f, Vector2.down, 0.1f, ground);
