@@ -13,7 +13,7 @@ public class movement : MonoBehaviour
     private BoxCollider2D coli;
 
     
-    private bool isJumping;
+  
 
     public LayerMask ground;
     // Start is called before the first frame update
@@ -34,6 +34,8 @@ public class movement : MonoBehaviour
         {
             rb.velocity = Vector2.up * force;
         }
+
+
     }
 
     private void FixedUpdate()
