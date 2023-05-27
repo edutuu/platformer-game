@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    public float force = 10; 
+    public float force = 5; 
     public float speed = 10; 
     private float horizontal;
     private float lockPos = 0;
