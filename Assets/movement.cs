@@ -11,9 +11,7 @@ public class movement : MonoBehaviour
 
     Rigidbody2D rb;
     private BoxCollider2D coli;
-
-    
-  
+    private Animator anim;
 
     public LayerMask ground;
     // Start is called before the first frame update
@@ -21,6 +19,7 @@ public class movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         coli = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,7 +34,14 @@ public class movement : MonoBehaviour
             rb.velocity = Vector2.up * force;
         }
 
-
+        if (horizontal != 0f)
+        {
+            anim.SetBool("is_running", true);
+        }
+        else
+        {
+            anim.SetBool("is_running", false);
+        }
     }
 
     private void FixedUpdate()
