@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    public float force = 5; 
+    public float force = 3; 
     public float speed = 10; 
-    private float horizontal;
+    private float horizontal = 0;
     private float lockPos = 0;
 
-    Rigidbody2D rb;
+    private Rigidbody2D rb;
     private BoxCollider2D coli;
     private Animator anim;
-
+    private SpriteRenderer sprite;
     public LayerMask ground;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coli = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -34,22 +35,42 @@ public class movement : MonoBehaviour
             rb.velocity = Vector2.up * force;
         }
 
-        if (horizontal != 0f)
+        update_animation();
+    }
+
+    private void update_animation()
+    {
+        if (horizontal < 0)
         {
             anim.SetBool("is_running", true);
+            sprite.flipX = true;
+        }
+        else if (horizontal > 0)
+        {
+            anim.SetBool("is_running", true);
+            sprite.flipX = false;
         }
         else
         {
             anim.SetBool("is_running", false);
         }
+
+        if (rb.velocity.y > .001f)
+        {
+            anim.SetBool("is_jumping", true);
+        }
+        else
+        {
+            anim.SetBool("is_jumping", false);
+        }
     }
+
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
     }
-
   
     private bool IsGrounded()
     {

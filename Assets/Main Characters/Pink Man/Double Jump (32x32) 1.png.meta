@@ -135,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Double Jump (32x32)_0
+      name: Double Jump (32x32) 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc26ef155fcd716479d3d641d4bf610e
-      internalID: -9101230857065804138
+      spriteID: b07a298823d5c6b4694d0e3836f70f2f
+      internalID: 182093088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_1
+      name: Double Jump (32x32) 1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -170,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63270021216da4a488905ef860348008
-      internalID: -6204479477933590408
+      spriteID: c302225656204aa4a809c749846c16db
+      internalID: -1354493413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_2
+      name: Double Jump (32x32) 1_2
       rect:
         serializedVersion: 2
         x: 64
@@ -191,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67f09dbbeaf6da945af5b6db94d6011a
-      internalID: 7040038629683462113
+      spriteID: 65ad8767dc6592b4182803c9dde44200
+      internalID: 444567075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_3
+      name: Double Jump (32x32) 1_3
       rect:
         serializedVersion: 2
         x: 96
@@ -212,14 +212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e6dde468ba0a8648b2aea51d2cf6d74
-      internalID: 781615245368611544
+      spriteID: c9840b49fe3961240af7ac887a07de7d
+      internalID: 267411324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_4
+      name: Double Jump (32x32) 1_4
       rect:
         serializedVersion: 2
         x: 128
@@ -233,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe00bc1ac1825f347b51764de015d3b8
-      internalID: -3939753913355333839
+      spriteID: a37eb82e9c17c6d4bad732fcf662f875
+      internalID: 438236075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Double Jump (32x32)_5
+      name: Double Jump (32x32) 1_5
       rect:
         serializedVersion: 2
         x: 160
@@ -254,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc912b65259bb044da9cb45c1f15f74f
-      internalID: 6301718139250434432
+      spriteID: 2196ce124549c6c4e8e719fc0a164c3b
+      internalID: 842060712
       vertices: []
       indices: 
       edges: []
@@ -271,12 +271,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Double Jump (32x32)_0: -9101230857065804138
-      Double Jump (32x32)_1: -6204479477933590408
-      Double Jump (32x32)_2: 7040038629683462113
-      Double Jump (32x32)_3: 781615245368611544
-      Double Jump (32x32)_4: -3939753913355333839
-      Double Jump (32x32)_5: 6301718139250434432
+      Double Jump (32x32) 1_0: 182093088
+      Double Jump (32x32) 1_1: -1354493413
+      Double Jump (32x32) 1_2: 444567075
+      Double Jump (32x32) 1_3: 267411324
+      Double Jump (32x32) 1_4: 438236075
+      Double Jump (32x32) 1_5: 842060712
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
