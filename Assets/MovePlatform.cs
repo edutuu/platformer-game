@@ -8,7 +8,7 @@ public class MovePlatform : MonoBehaviour
     [SerializeField] private GameObject[] waypoints;
     private int curentWaypoint = 0;
 
-    public float speed = 1f;
+    public float speed = 3f;
 
     private void Update()
     {

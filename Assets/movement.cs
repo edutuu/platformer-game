@@ -8,7 +8,7 @@ public class movement : MonoBehaviour
     public float speed = 10; 
     private float horizontal = 0;
     private float lockPos = 0;
-
+    
     private Rigidbody2D rb;
     private BoxCollider2D coli;
     private Animator anim;
@@ -34,6 +34,7 @@ public class movement : MonoBehaviour
         {
             rb.velocity = Vector2.up * force;
         }
+
 
         update_animation();
     }

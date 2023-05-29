@@ -18,8 +18,7 @@ public class Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap")) 
         {
-            health = health - 1;
-            rb.AddForce(Vector2.up * knockback, ForceMode2D.Impulse);
+            Die();
         }
     }
 
