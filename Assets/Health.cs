@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
 {
     public int health;
     public int knockback;
+    public int tries = 0;
+    public int retry_scene = 1;
     private Rigidbody2D rb;
 
     void Start()
@@ -16,8 +18,9 @@ public class Health : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap")) 
+        if (collision.gameObject.CompareTag("Trap") && tries == 0) 
         {
+            tries++;
             Die();
         }
     }
@@ -34,6 +37,8 @@ public class Health : MonoBehaviour
     {
         rb.bodyType = RigidbodyType2D.Static;
         LevelReset();
+        deathCount.death_cnt += 1;
+        SceneManager.LoadScene(retry_scene);
     }
 
     private void LevelReset()

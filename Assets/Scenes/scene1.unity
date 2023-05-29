@@ -70980,6 +70980,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   knockback: 1
+  tries: 0
+  retry_scene: 1
 --- !u!95 &1219488708
 Animator:
   serializedVersion: 5

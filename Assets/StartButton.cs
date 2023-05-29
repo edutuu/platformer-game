@@ -7,7 +7,7 @@ public class StartButton : MonoBehaviour
 {
     public void start_game() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void quit()

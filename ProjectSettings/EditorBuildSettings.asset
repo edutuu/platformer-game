@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 38c69ead2b3abbb4aa798d7f113c7d3a
   - enabled: 1
+    path: Assets/Scenes/retry_menu.unity
+    guid: 9cb80b7c7b6fed84a90ac0e654d3d5a0
+  - enabled: 1
     path: Assets/Scenes/scene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/scene2.unity
-    guid: 07f950225bcbe5448902d5877717b6b7
+    guid: 32c81ee0c8468f14b8594dddabcb72f0
   m_configObjects: {}
