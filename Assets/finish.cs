@@ -11,7 +11,7 @@ public class finish : MonoBehaviour
     {
         if (collision.gameObject.name == "character")
         {
-            Invoke("complete_level", 1f);
+            Invoke("complete_level", 0.5f);
         }
     }
 

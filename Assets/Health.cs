@@ -7,8 +7,8 @@ public class Health : MonoBehaviour
 {
     public int health;
     public int knockback;
-    public int tries = 0;
-    public int retry_scene = 1;
+    private int tries = 0;
+    private int retry_scene = 1;
     private Rigidbody2D rb;
     private Animator anim;
 

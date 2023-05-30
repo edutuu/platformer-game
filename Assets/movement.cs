@@ -14,6 +14,9 @@ public class movement : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
     public LayerMask ground;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +41,7 @@ public class movement : MonoBehaviour
 
         update_animation();
     }
-
+            
     private void update_animation()
     {
         if (horizontal < 0)
