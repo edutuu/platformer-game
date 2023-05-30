@@ -10,10 +10,12 @@ public class Health : MonoBehaviour
     public int tries = 0;
     public int retry_scene = 1;
     private Rigidbody2D rb;
+    private Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -36,13 +38,12 @@ public class Health : MonoBehaviour
     void Die()
     {
         rb.bodyType = RigidbodyType2D.Static;
-        LevelReset();
+        anim.SetTrigger("death");
         deathCount.death_cnt += 1;
-        SceneManager.LoadScene(retry_scene);
     }
 
     private void LevelReset()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(retry_scene);
     }
 }
